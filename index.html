@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Recorder — private, local meeting recorder</title>
+    <meta
+      name="description"
+      content="Record a Google Meet tab to a video on your own computer. No account, no cloud, no AI. Optional Google Drive backup you turn on yourself."
+    />
+    <style>
+      :root {
+        --bg: #0f0f14;
+        --card: #17171f;
+        --border: #2a2a35;
+        --text: #f2f2f5;
+        --muted: #a0a0ae;
+        --accent: #6366f1;
+        --accent-hover: #4f46e5;
+        --ok: #3dbd77;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+      .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+      .logo {
+        width: 44px; height: 44px; border-radius: 12px;
+        background: linear-gradient(135deg, var(--accent), #8a8aff);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .logo span {
+        width: 16px; height: 16px; border-radius: 50%;
+        border: 3px solid #fff;
+      }
+      .brand h1 { font-size: 20px; margin: 0; }
+      h2 {
+        font-size: 34px; line-height: 1.2; margin: 0 0 16px;
+        letter-spacing: -0.02em;
+      }
+      .lead { font-size: 18px; color: var(--muted); margin: 0 0 32px; }
+      .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 40px; }
+      .badge {
+        font-size: 13px; color: var(--muted);
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: 999px; padding: 6px 12px;
+      }
+      .card {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: 16px; padding: 28px 28px 8px; margin: 0 0 24px;
+      }
+      .card h3 { margin: 0 0 16px; font-size: 15px; color: var(--muted);
+        text-transform: uppercase; letter-spacing: 0.06em; }
+      ul { list-style: none; padding: 0; margin: 0 0 20px; }
+      li { display: flex; gap: 12px; padding: 8px 0; align-items: flex-start; }
+      li .tick { color: var(--ok); flex: 0 0 auto; margin-top: 2px; }
+      .foot { margin-top: 48px; color: var(--muted); font-size: 14px; }
+      .foot a { color: #a2a4f8; }
+      a { color: #a2a4f8; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo"><span></span></div>
+        <h1>Tab Recorder</h1>
+      </div>
+
+      <h2>Record your meetings, kept on your computer.</h2>
+      <p class="lead">
+        A dead simple recorder for Google Meet. Click record, and the call is
+        saved as a video file on your own machine. No account, no cloud, no AI
+        notetaker.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Local first</span>
+        <span class="badge">No account</span>
+        <span class="badge">No AI</span>
+        <span class="badge">Follows your Meet mute</span>
+        <span class="badge">Optional Google Drive backup</span>
+      </div>
+
+      <div class="card">
+        <h3>What it does</h3>
+        <ul>
+          <li><span class="tick">&#10003;</span> Records the meeting tab to a video file on your computer.</li>
+          <li><span class="tick">&#10003;</span> Shows a recorder button right inside the Google Meet call.</li>
+          <li><span class="tick">&#10003;</span> Mutes your mic in the recording when you mute yourself in Meet.</li>
+          <li><span class="tick">&#10003;</span> Keeps a tidy list of your recordings to play, rename, or delete.</li>
+          <li><span class="tick">&#10003;</span> Optional: back a copy up to your own Google Drive, only if you turn it on.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Your privacy</h3>
+        <ul>
+          <li><span class="tick">&#10003;</span> Recordings never leave your computer unless you choose Google Drive backup.</li>
+          <li><span class="tick">&#10003;</span> No analytics, no tracking, nothing sent to us. Ever.</li>
+          <li><span class="tick">&#10003;</span> Google Drive backup uses the least access possible: the app can only see files it made.</li>
+        </ul>
+        <p style="color: var(--muted); font-size: 14px;">
+          Read the full <a href="privacy.html">privacy policy</a>.
+        </p>
+      </div>
+
+      <p class="foot">
+        Coming soon to the Chrome Web Store. Questions?
+        <a href="mailto:lokesh.8055.m@gmail.com">lokesh.8055.m@gmail.com</a>.
+      </p>
+    </div>
+  </body>
+</html>
